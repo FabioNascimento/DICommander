@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0D9E626-DD83-409A-A5C8-684DAA9B65BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DIC</RootNamespace>
+    <AssemblyName>B1TCH</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiffieHellman, Version=0.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\DiffieHellman.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.CodeEditor, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.CodeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.CodeEditor.SyntaxFiles, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.CodeEditor.SyntaxFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Core, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Docking, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Plugins, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Ssh, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Ssh.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.SyntaxDocument, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.SyntaxDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Win32, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Win32.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Windows.Forms, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Fireball.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security, Version=1.0.13.715, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DICEngine.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronPython1.1\IronMath\AssemblyInfo.cs" />
+    <Compile Include="IronPython1.1\IronMath\BigInteger.cs" />
+    <Compile Include="IronPython1.1\IronMath\Complex64.cs" />
+    <Compile Include="IronPython1.1\IronMath\IronMath.Designer.cs" />
+    <Compile Include="IronPython1.1\IronMath\ISlice.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\CodeMerger.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Compiler.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Generator.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Interfaces.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Parser.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Provider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IronPython1.1\IronPython\CodeDom\References.cs" />
+    <Compile Include="IronPython1.1\IronPython\CodeDom\Walker.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Binder.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\ClassDef.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Expressions.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\FlowChecker.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\FuncDef.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\FuncDef.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Node.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Operator.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Operator.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\ScopeStatement.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\ScopeStatement.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Statements.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\AST\Walker.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\CompiledModule.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\CompilerContext.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\CompilerHelpers.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\AssemblyGen.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\CodeGen.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\EnvironmentFactory.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\EnvironmentNamespace.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\EnvironmentReference.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\Namespace.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\NewSubtypeMaker.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\NewTypeMaker.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\OutputGenerator.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\Slot.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\SlotFactory.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\TypeGen.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Generation\UserTypeGenerator.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\MethodBinder.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\MethodTracker.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\NameConverter.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\NameEnv.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\NewTypeInfo.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Options.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Parser.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\ParserSink.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Token.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Tokenizer.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\Tokenizer.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Compiler\TokenKind.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\AdapterDict.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\CompiledCode.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\CompilerSink.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\EngineModule.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\PythonCompiler.cs" />
+    <Compile Include="IronPython1.1\IronPython\Hosting\PythonEngine.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\array.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\binascii.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\Builtin.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\Builtin.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\clr.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\codecs.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\collections.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\copy_reg.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\cPickle.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\cStringIO.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\datetime.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\errno.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\Exceptions.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\Exceptions.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\gc.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\imp.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\IterTools.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\locale.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\marshal.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\math.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\math.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\md5.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\nt.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\operator.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\re.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\select.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\sha.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\socket.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\struct.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\thread.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\time.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\_random.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\_sre.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\_weakref.cs" />
+    <Compile Include="IronPython1.1\IronPython\Modules\_weakref.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Attributes.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\BuiltinFunction.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\BuiltinFunction.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\DefaultContext.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\Descriptors.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\FastCallable.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\FastCallable.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\Function.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\Function.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\FunctionEnvironment.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\FunctionEnvironment.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\Interfaces.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\calls\kwargbinder.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\CompareUtil.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\ConversionWrappers.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Converter.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Converter.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\CustomSymbolDict.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Dict.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\DictComparers.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Enumerate.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Exceptions\exceptionconverter.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Exceptions\PythonException.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Exceptions\PythonException.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Exceptions\TraceBack.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\FieldIdDict.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Generator.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\IdDispenser.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Importer.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Interfaces.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Interfaces.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\List.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\LiteralParser.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\ModuleScope.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ArrayOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\BoolOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ByteOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ByteOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\CharOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ComplexOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ComplexOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\CustomTypeDescHelpers.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\DecimalOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\EnumOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\FloatOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\FloatOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\InstanceOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Int16Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Int16Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Int64Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Int64Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\IntOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\IntOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\LongOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\LongOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\ObjectOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\SByteOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\SByteOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\SingleOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\SingleOps.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\StringOps.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt16Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt16Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt32Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt32Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt64Ops.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Operations\UInt64Ops.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\PerfTrack.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Publisher.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\PythonBuffer.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\PythonFile.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\PythonModule.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\ReflectedPackage.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\ReflectionUtil.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Set.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Slice.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\StringFormatter.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Super.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\SymbolIdDictBase.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\SymbolTable.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\SymbolTable.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\SystemState.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Tuple.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\ComObject.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\CompiledType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\DelegateType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\DynamicType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\DynamicType.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\EmptyType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\MethodWrapper.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\Mro.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\OldClass.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\OpsReflectedType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\ReflectedAssembly.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\ReflectedMembers.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\ReflectedType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\TypeCache.Generated.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Types\UserType.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\Uninitialized.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\WeakHash.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\WeakRef.cs" />
+    <Compile Include="IronPython1.1\IronPython\Runtime\XRange.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronPython1.1\IronMath\IronMath.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShellControl\ShellControl.resx">
+      <DependentUpon>ShellControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShellControl\ShellTextBox.resx">
+      <DependentUpon>ShellTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="IronPython1.1\Scripts\clean.py" />
+    <None Include="IronPython1.1\Scripts\CompareDirs.py" />
+    <None Include="IronPython1.1\Scripts\copyrights.py" />
+    <None Include="IronPython1.1\Scripts\generate.py" />
+    <None Include="IronPython1.1\Scripts\generate_alltypes.py" />
+    <None Include="IronPython1.1\Scripts\generate_binops.py" />
+    <None Include="IronPython1.1\Scripts\generate_calls.py" />
+    <None Include="IronPython1.1\Scripts\generate_convert.py" />
+    <None Include="IronPython1.1\Scripts\generate_environment.py" />
+    <None Include="IronPython1.1\Scripts\generate_exceptions.py" />
+    <None Include="IronPython1.1\Scripts\generate_indicetest.py" />
+    <None Include="IronPython1.1\Scripts\generate_math.py" />
+    <None Include="IronPython1.1\Scripts\generate_ops.py" />
+    <None Include="IronPython1.1\Scripts\generate_symboltable.py" />
+    <None Include="IronPython1.1\Scripts\generate_typecache.py" />
+    <None Include="IronPython1.1\Scripts\generate_walker.py" />
+    <None Include="IronPython1.1\Scripts\make_meta1.py" />
+    <None Include="IronPython1.1\Scripts\radix_generator.py" />
+    <None Include="IronPython1.1\Scripts\test_builder.py" />
+    <None Include="IronPython1.1\Scripts\test_cgcheck.py" />
+    <None Include="IronPython1.1\Scripts\test_parrot.py" />
+    <None Include="IronPython1.1\Scripts\test_pystone.py" />
+    <None Include="IronPython1.1\Scripts\Wix\build.bat" />
+    <None Include="IronPython1.1\Scripts\Wix\Core.wxs" />
+    <None Include="IronPython1.1\Scripts\Wix\Doc.wxs" />
+    <None Include="IronPython1.1\Scripts\Wix\IronPython.wxs" />
+    <None Include="IronPython1.1\Scripts\Wix\Src.wxs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Python.syn" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShellControl\CommandHistory.cs" />
+    <Compile Include="ShellControl\ShellControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShellControl\ShellTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IronPython1.1\IronMath\IronMath.csproj" />
+    <Content Include="IronPython1.1\IronPython\IronPython.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE344CD}</Guid>
+      <VersionMajor>2005</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IronPython1.1\Scripts\Tests\compat\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Imp\pkg_a\pkg_b\pkg_c\pkg_d\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Imp\pkg_m\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Imp\pkg_q\pkg_r\pkg_s\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Inc\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Inputs\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\StandAlone\ModPath\" />
+    <Folder Include="IronPython1.1\Scripts\Tests\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
